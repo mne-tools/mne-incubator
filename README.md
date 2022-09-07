@@ -1,6 +1,6 @@
 # MNE-Python incubator
 
-[![Join the chat at https://gitter.im/mne-tools/mne-sandbox](https://badges.gitter.im/mne-tools/mne-sandbox.svg)](https://gitter.im/mne-tools/mne-sandbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[Questions? Use the MNE Forum!](https://mne.discourse.group)
 
 This is a repository for experimental code for new techniques and ideas that may or may not make it into the official MNE-Python package. All of this is considered as work-in-progress.
 
