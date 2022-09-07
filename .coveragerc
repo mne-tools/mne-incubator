@@ -1,7 +1,7 @@
 [run]
 branch = True
-source = mne_sandbox
-include = */mne_sandbox/*
+source = mne_incubator
+include = */mne_incubator/*
 omit =
-    */mne_sandbox/externals/*
+    */mne_incubator/externals/*
     */setup.py

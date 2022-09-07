@@ -3,13 +3,13 @@ from setuptools import setup
 
 descr = """Experimental code for MEG and EEG data analysis."""
 
-DISTNAME = 'mne-sandbox'
+DISTNAME = 'mne-incubator'
 DESCRIPTION = descr
 MAINTAINER = 'Alexandre Gramfort'
 MAINTAINER_EMAIL = 'alexandre.gramfort@telecom-paristech.fr'
 URL = 'http://martinos.org/mne'
 LICENSE = 'BSD (3-clause)'
-DOWNLOAD_URL = 'http://github.com/mne-tools/mne-sandbox'
+DOWNLOAD_URL = 'http://github.com/mne-tools/mne-incubator'
 VERSION = 'unstable'
 
 if __name__ == "__main__":
@@ -36,10 +36,10 @@ if __name__ == "__main__":
           ],
           platforms='any',
           packages=[
-              'mne_sandbox',
-              'mne_sandbox.preprocessing',
-              'mne_sandbox.connectivity',
-              'mne_sandbox.externals',
-              'mne_sandbox.externals.pacpy',
+              'mne_incubator',
+              'mne_incubator.preprocessing',
+              'mne_incubator.connectivity',
+              'mne_incubator.externals',
+              'mne_incubator.externals.pacpy',
           ],
       )

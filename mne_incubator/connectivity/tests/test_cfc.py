@@ -9,10 +9,10 @@ from numpy.testing import assert_allclose
 import pytest
 
 import mne
-from mne_sandbox.connectivity import (phase_amplitude_coupling,
-                                      phase_locked_amplitude,
-                                      phase_binned_amplitude,
-                                      simulate_pac_signal)
+from mne_incubator.connectivity import (phase_amplitude_coupling,
+                                        phase_locked_amplitude,
+                                        phase_binned_amplitude,
+                                        simulate_pac_signal)
 from sklearn.preprocessing import scale
 
 np.random.seed(1337)

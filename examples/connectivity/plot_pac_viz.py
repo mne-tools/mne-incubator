@@ -25,9 +25,9 @@ import numpy as np
 import mne
 from mne import io
 from mne.datasets import sample
-from mne_sandbox.connectivity import (phase_amplitude_coupling,
-                                      plot_phase_locked_amplitude,
-                                      plot_phase_binned_amplitude)
+from mne_incubator.connectivity import (phase_amplitude_coupling,
+                                        plot_phase_locked_amplitude,
+                                        plot_phase_binned_amplitude)
 import matplotlib.pyplot as plt
 
 print(__doc__)

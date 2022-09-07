@@ -7,7 +7,7 @@
 # License: BSD (3-clause)
 
 import numpy as np
-from mne_sandbox.preprocessing import dss
+from mne_incubator.preprocessing import dss
 from matplotlib import pyplot as plt
 
 
