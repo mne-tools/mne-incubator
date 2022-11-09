@@ -20,8 +20,8 @@ References
 import mne
 import numpy as np
 from matplotlib import pyplot as plt
-from mne_sandbox.connectivity import (simulate_pac_signal,
-                                      phase_amplitude_coupling)
+from mne_incubator.connectivity import (simulate_pac_signal,
+                                        phase_amplitude_coupling)
 import logging
 
 print(__doc__)

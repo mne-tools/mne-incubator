@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import mne
 from mne.datasets import sample
 
-from mne_sandbox.preprocessing import dss
+from mne_incubator.preprocessing import dss
 
 
 # file paths

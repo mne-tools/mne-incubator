@@ -18,7 +18,7 @@ License: BSD (3-clause)
 """
 
 import mne
-from mne_sandbox.preprocessing import eog_regression
+from mne_incubator.preprocessing import eog_regression
 from mne.datasets import sample
 from matplotlib import pyplot as plt
 

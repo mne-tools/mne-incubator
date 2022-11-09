@@ -38,36 +38,36 @@ testing_data:
 
 test: in
 	rm -f .coverage
-	$(NOSETESTS) -a '!ultra_slow_test' mne_sandbox
+	$(NOSETESTS) -a '!ultra_slow_test' mne_incubator
 
 test-fast: in
 	rm -f .coverage
-	$(NOSETESTS) -a '!slow_test' mne_sandbox
+	$(NOSETESTS) -a '!slow_test' mne_incubator
 
 test-full: in
 	rm -f .coverage
-	$(NOSETESTS) mne_sandbox
+	$(NOSETESTS) mne_incubator
 
 test-no-network: in
-	sudo unshare -n -- sh -c 'MNE_SKIP_NETWORK_TESTS=1 nosetests mne_sandbox'
+	sudo unshare -n -- sh -c 'MNE_SKIP_NETWORK_TESTS=1 nosetests mne_incubator'
 
 test-no-testing-data: in
 	@MNE_SKIP_TESTING_DATASET_TESTS=true \
-	$(NOSETESTS) mne_sandbox
+	$(NOSETESTS) mne_incubator
 
 test-no-sample-with-coverage: in testing_data
 	rm -rf coverage .coverage
-	$(NOSETESTS) --with-coverage --cover-package=mne_sandbox --cover-html --cover-html-dir=coverage
+	$(NOSETESTS) --with-coverage --cover-package=mne_incubator --cover-html --cover-html-dir=coverage
 
 test-doc: sample_data testing_data
 	$(NOSETESTS) --with-doctest --doctest-tests --doctest-extension=rst doc/
 
 test-coverage: testing_data
 	rm -rf coverage .coverage
-	$(NOSETESTS) --with-coverage --cover-package=mne _sandbox--cover-html --cover-html-dir=coverage
+	$(NOSETESTS) --with-coverage --cover-package=mne_incubator --cover-html --cover-html-dir=coverage
 
 test-profile: testing_data
-	$(NOSETESTS) --with-profile --profile-stats-file stats.pf mne_sandbox
+	$(NOSETESTS) --with-profile --profile-stats-file stats.pf mne_incubator
 	hotshot2dot stats.pf | dot -Tpng -o profile.png
 
 test-mem: in testing_data
@@ -84,7 +84,7 @@ ctags:
 flake:
 	@if command -v flake8 > /dev/null; then \
 		echo "Running flake8"; \
-		flake8 --count mne_sandbox; \
+		flake8 --count mne_incubator; \
 	else \
 		echo "flake8 not found, please install it!"; \
 		exit 1; \

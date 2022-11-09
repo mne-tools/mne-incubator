@@ -11,7 +11,7 @@ from mne.io import RawArray
 from mne.utils import run_tests_if_main
 from mne.datasets import testing
 
-from mne_sandbox.preprocessing import SensorNoiseSuppression
+from mne_incubator.preprocessing import SensorNoiseSuppression
 
 data_path = testing.data_path()
 raw_fname = op.join(data_path, 'MEG', 'sample', 'sample_audvis_trunc_raw.fif')

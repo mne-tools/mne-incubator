@@ -3,7 +3,7 @@ import numpy as np
 import scipy.stats
 from numpy.testing import assert_allclose, assert_equal
 
-from mne_sandbox.preprocessing.eog import eog_regression
+from mne_incubator.preprocessing.eog import eog_regression
 
 
 def test_eog_regression():

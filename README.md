@@ -1,6 +1,6 @@
-# MNE-Python sandbox
+# MNE-Python incubator
 
-[![Join the chat at https://gitter.im/mne-tools/mne-sandbox](https://badges.gitter.im/mne-tools/mne-sandbox.svg)](https://gitter.im/mne-tools/mne-sandbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[Questions? Use the MNE Forum!](https://mne.discourse.group)
 
 This is a repository for experimental code for new techniques and ideas that may or may not make it into the official MNE-Python package. All of this is considered as work-in-progress.
 
@@ -9,4 +9,4 @@ Contributions are welcome in the form of pull requests. Once the implementation 
 
 ## Code organization
 
-The directory structure of this repository mirrors the one of MNE-Python. When you add new functionality, place it in the location where you would expect it to end up in the MNE-Python repository. Your code may depend on the development version of MNE-Python and other submodules of MNE-sandbox. At least one example script should be placed in the `mne_sandbox/examples` folder.
+The directory structure of this repository mirrors the one of MNE-Python. When you add new functionality, place it in the location where you would expect it to end up in the MNE-Python repository. Your code may depend on the development version of MNE-Python and other submodules of MNE-incubator. At least one example script should be placed in the `mne_incubator/examples` folder.

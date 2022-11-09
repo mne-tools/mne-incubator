@@ -5,7 +5,7 @@ from numpy.testing import assert_allclose
 import pytest
 
 from mne import create_info, EpochsArray
-from mne_sandbox.preprocessing import dss
+from mne_incubator.preprocessing import dss
 
 
 def test_dss_args():
